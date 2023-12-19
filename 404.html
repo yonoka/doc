@@ -16,11 +16,14 @@
     
     
       
-        <title>AXSDK1</title>
+        <title>AXSDK</title>
       
     
     
       <link rel="stylesheet" href="/assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -93,7 +96,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep" data-md-color-accent="deep">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -115,9 +125,9 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="AXSDK1" class="md-header__button md-logo" aria-label="AXSDK1" data-md-component="logo">
+    <a href="/." title="AXSDK" class="md-header__button md-logo" aria-label="AXSDK" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -131,7 +141,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            AXSDK1
+            AXSDK
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -144,9 +154,61 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep" data-md-color-accent="deep"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep" data-md-color-accent="deep"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
     
       <label class="md-header__button md-icon" for="__search">
@@ -166,11 +228,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -201,13 +270,62 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="/en/0x001.introduction/" class="md-tabs__link">
+          
+  
+    
+  
+  En
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="/zh/0x001.introduction/" class="md-tabs__link">
+          
+  
+    
+  
+  Zh
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -221,16 +339,18 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="AXSDK1" class="md-nav__button md-logo" aria-label="AXSDK1" data-md-component="logo">
+    <a href="/." title="AXSDK" class="md-nav__button md-logo" aria-label="AXSDK" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    AXSDK1
+    AXSDK
   </label>
   
     <div class="md-nav__source">
@@ -253,68 +373,68 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+    
+    
+      
         
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-    </li>
-  
-
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
     
       
       
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/develop-environment/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
         
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
   
   <span class="md-ellipsis">
-    Dev Environment Configuration
+    En
   </span>
   
 
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/init-example/" class="md-nav__link">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-  
-  <span class="md-ellipsis">
-    SDK Initialization Example
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            En
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="/introduction/" class="md-nav__link">
+      <a href="/en/0x001.introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -326,19 +446,20 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="/map-example/" class="md-nav__link">
+      <a href="/en/0x002.develop-environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Map Display Example
+    Dev Environment Configuration
   </span>
   
 
@@ -346,15 +467,16 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="/private-example/" class="md-nav__link">
+      <a href="/en/0x003.private-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,2103 +488,380 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+              
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/en/init-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDK Initialization Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/en/map-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map Display Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/en/AXMap/AXMap-deleteCruise/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     AXMap
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            AXMap
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-deleteCruise/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Delete Cruise Route
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-edit/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Edit Map
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-getCruises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Cruise Route
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-interaction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Map Interaction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-other/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Others
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-overlay/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overlay Operation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-saveCruise/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Setting/Update Cruise Route
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-syncCruiseCloud/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Synchronize cloud cruise routes
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXMap/AXMap-syncCruiseLocal/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Local upload to the cloud cruise routes
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+              
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/en/AXRobot/AXRobot-beginControl/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     AXRobot
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            AXRobot
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-beginControl/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Begin Control Motion
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-boxDoor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cabin Door Control
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-cancelTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cancel Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-connectRobot/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Connect
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-continueTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Continue Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-createMap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Create Map
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-destroy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Destroy
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-endControl/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    End Control Motion
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getAreaList/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get List Of Area
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getAreaPic/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Area Basemap
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getBusinessId/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Robot Business ID
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getCurrentTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Current Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getEffectiveAreaList/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Effective Area List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getPlaceList/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Current Area Sites
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getPoiList/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get All Sites
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getRobotId/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Robot ID
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getRobotOwnCharges/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Bound Charging Pile
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getRouteMode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Network Mode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getState/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Current State Of The Robot
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-getVersion/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get SDK Version
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-goHome/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Back To Charge
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-init/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Initialize
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-lightBelt/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Light Belt Control
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-motionControl/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Complex Motion
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-motionFor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Simple Motion
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-moveTo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fixed-Point Motion
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-pauseTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Pause Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-removeWheelOverload/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Remove Wheel Overload
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-resetMap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Reset Map
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-resetPose/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Relocation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-restartRobot/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Restart Robot
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-restartTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Restart Current Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-resumeTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Resume Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setEmergency/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Emergency Stop
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setEnableTrack/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Setup Robot Tracking
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setGlobalPosition/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Global Position
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setLanguage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Language
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setPlayAudio/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Play Audio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setRouteMode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Network Mode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setServerInfos/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Server Info
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setSpeed/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Speed
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setVolume/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Volume
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-setWifi/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Set Wifi
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-sprayer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sprayer Control
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-startTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Start Task
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-stopPlayAudio/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Stop Play Audio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-subscribeRealState/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Subscribe To Robot Status
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-subscribeTaskState/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Subscribe To Task Status
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-updateMap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Update Map
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/AXRobot/AXRobot-updateTask/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Update Current Task
-  </span>
-  
-
-      </a>
-    </li>
-  
 
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+              
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/en/AXStatis/AXStatis-singleTask/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    AXStatis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/en/Define/Define-ActionType/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Define
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
-            Define
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-ActionType/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionType
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-BaseAction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    BaseAction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-CruiseInfo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CruiseInfo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-EmergencyType/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    EmergencyType
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-FaultCode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    FaultCode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-LightBelt/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LightBelt
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-LightColor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LightColor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-LightIndex/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LightIndex
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-MapPose/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MapPose
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-MotionType/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MotionType
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-OnRobotListener/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    OnRobotListener
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-OnTaskListener/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    OnTaskListener
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-PlayAudio/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PlayAudio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-PoiType/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    POI Types
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-Pose/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Pose
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-RequestPage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    RequestPage
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-RequestParam/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    RequestParam
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-ServerInfo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ServerInfo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-SingleTaskStatistics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SingleTaskStatistics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-StatisticsTotal/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    StatisticsTotal
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-TaskInfo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TaskInfo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-TaskPoint/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TaskPoint
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/Define-TaskStatistics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TaskStatistics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_9_24" id="__nav_9_24_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ActionData
-  </span>
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9_24">
-            <span class="md-nav__icon md-icon"></span>
-            ActionData
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-CloseDoor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - CloseDoor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-CloseLight/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - CloseLight
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-GearOperation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - GearOperation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-OpenDoor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - OpenDoor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-OpenLight/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - OpenLight
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-Pause/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - Pause
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-PlayAudio/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - PlayAudio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-StopAudio/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - StopAudio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-TaskEnd/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - TaskEnd
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Define/ActionData/Define-ActionData-TaskStart/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ActionData - TaskStart
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -2484,32 +883,55 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Statistics
+    Zh
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Statistics
+            Zh
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2520,11 +942,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Statistics/AXStatis-singleTask/" class="md-nav__link">
+      <a href="/zh/0x001.introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Single Task Statistics
+    简介
   </span>
   
 
@@ -2541,11 +963,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Statistics/AXStatis-task/" class="md-nav__link">
+      <a href="/zh/0x002.develop-environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Task Statistics
+    开发环境配置
   </span>
   
 
@@ -2562,15 +984,393 @@
   
   
     <li class="md-nav__item">
-      <a href="/Statistics/AXStatis-total/" class="md-nav__link">
+      <a href="/zh/0x003.private-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Statistics Total
+    SDK 私有化示例
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/zh/init-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDK 初始化示例
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/zh/map-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    地图显示示例
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/zh/AXMap/AXMap-deleteCruise/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    AXMap
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/zh/AXRobot/AXRobot-beginControl/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    AXRobot
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/zh/AXStatis/AXStatis-singleTask/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    AXStatis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="/zh/Define/Define-ActionType/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Define
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -2622,9 +1422,17 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
+  
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2648,7 +1456,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["search.highlight", "content.tabs.link"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "/", "features": ["search.highlight", "content.tabs.link", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "navigation.instant", "navigation.tracking", "content.code.annotate", "toc.follow", "navigation.path", "navigation.top", "navigation.tabs", "navigation.prune", "navigation.footer", "navigation.tabs.sticky", "content.code.copy", "navigation.indexes", "search.share", "search.suggest", "search.highlight"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="/assets/javascripts/bundle.d7c377c4.min.js"></script>
